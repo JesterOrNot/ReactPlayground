@@ -16,7 +16,7 @@ function updateColor(color) {
     }
 }
 
-export default function Count() {
+export default function Counter() {
   return (
     <div>
       <h1
@@ -25,7 +25,7 @@ export default function Count() {
           paddingRight: "10%"
         }}
       >
-        Counter: {x}
+        Count: {x}
       </h1>
       <button
         onClick={() => {

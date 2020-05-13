@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import MediaCard from "./MediaCard";
-import Count from "./Count";
+import Counter from "./Counter";
+import Greeter from './Greeter';
 
 export default function App() {
   return (
     <div>
-      <Count />
+      <Greeter />
+      <hr />
+      <br /> 
+      <Counter />
       <hr />
       <br />
       <div className="cards">
