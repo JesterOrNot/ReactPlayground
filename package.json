@@ -1,7 +1,6 @@
 {
-  "name": "open_blog",
+  "name": "react_playground",
   "version": "1.0.0",
-  "description": "An open sourced blogging platform.",
   "keywords": [
     "react",
     "starter"
