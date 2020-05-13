@@ -3,10 +3,14 @@ import ReactDOM from "react-dom";
 import MediaCard from "./MediaCard";
 import Counter from "./Counter";
 import Greeter from './Greeter';
+import Todo from './Todo';
 
 export default function App() {
   return (
     <div>
+      <Todo />
+      <hr />
+      <br /> 
       <Greeter />
       <hr />
       <br /> 

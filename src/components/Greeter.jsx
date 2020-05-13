@@ -7,6 +7,7 @@ export default function Greeter() {
     <div>
       <p>Hello, {name}!</p>
       <input
+        placeholder="Enter your name."
         type="text"
         onChange={e =>
           e.target.value.length != 0
