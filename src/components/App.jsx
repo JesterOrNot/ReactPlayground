@@ -2,18 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import MediaCard from "./MediaCard";
 import Counter from "./Counter";
-import Greeter from './Greeter';
-import Todo from './Todo';
+import Greeter from "./Greeter";
+import Todo from "./Todo";
+import Popup from "./Popup";
 
 export default function App() {
   return (
     <div>
+      <Popup
+        buttonText="Display Popup!"
+        title="Error"
+        text="An Error has occured please try again later."
+      />
+      <hr />
+      <br />
       <Todo />
       <hr />
-      <br /> 
+      <br />
       <Greeter />
       <hr />
-      <br /> 
+      <br />
       <Counter />
       <hr />
       <br />
