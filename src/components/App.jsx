@@ -3,28 +3,26 @@ import ReactDOM from "react-dom";
 import MediaCard from "./MediaCard";
 import Counter from "./Counter";
 import Greeter from "./Greeter";
+import Title from "./Title";
 import Todo from "./Todo";
 import Popup from "./Popup";
 
 export default function App() {
   return (
     <div>
+      <Title text="Popup" />
       <Popup
         buttonText="Display Popup!"
         title="Error"
         text="An Error has occured please try again later."
       />
-      <hr />
-      <br />
+      <Title text="Todo List" />
       <Todo />
-      <hr />
-      <br />
+      <Title text="Greeter"/>
       <Greeter />
-      <hr />
-      <br />
+      <Title text="Counter"/>
       <Counter />
-      <hr />
-      <br />
+      <Title text="Fun Cards!" />
       <div className="cards">
         <MediaCard
           title="GitHub"
