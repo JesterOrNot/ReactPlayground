@@ -11,7 +11,9 @@ class Popup extends React.Component {
   }
 
   toggle() {
-    this.state.show = !this.state.show;
+    this.setState({
+      show: !this.state.show
+    });
     ReactDOM.render(<App />, document.querySelector("#root"));
   }
 

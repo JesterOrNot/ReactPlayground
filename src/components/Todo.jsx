@@ -1,8 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-
-let API = "https://api.github.com/search/repositories?q=gitpod";
 
 export default class TodoList extends React.Component {
   constructor(props) {
