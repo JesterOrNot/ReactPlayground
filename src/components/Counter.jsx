@@ -1,19 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App"
+import App from "./App";
 var x = 0;
-var theColor = 'black';
+var theColor = "black";
 
 function updateColor(color) {
-    if (color === "black") {
-        return "blue"
-    } else if (color === "blue") {
-        return "red"
-    } else if (color === "red") {
-        return "green"
-    } else {
-        return "black"
-    }
+  if (color === "black") {
+    return "blue";
+  } else if (color === "blue") {
+    return "red";
+  } else if (color === "red") {
+    return "green";
+  } else {
+    return "black";
+  }
 }
 
 export default function Counter() {

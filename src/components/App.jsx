@@ -18,9 +18,9 @@ export default function App() {
       />
       <Title text="Todo List" />
       <Todo />
-      <Title text="Greeter"/>
+      <Title text="Greeter" />
       <Greeter />
-      <Title text="Counter"/>
+      <Title text="Counter" />
       <Counter />
       <Title text="Fun Cards!" />
       <div className="cards">
