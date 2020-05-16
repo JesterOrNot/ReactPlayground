@@ -4,7 +4,7 @@ export default function Greeter() {
   var [name, setName] = React.useState("World");
   return (
     <div>
-      <p>Hello, {name}!</p>
+      <p style={{color: "white"}}>Hello, {name}!</p>
       <input
         placeholder="Enter your name."
         type="text"

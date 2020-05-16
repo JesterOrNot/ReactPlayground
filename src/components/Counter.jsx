@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import Button from "./Button";
 var x = 0;
-var theColor = "black";
+var theColor = "white";
 
 function updateColor(color) {
-  if (color === "black") {
+  if (color === "white") {
     return "blue";
   } else if (color === "blue") {
     return "red";
   } else if (color === "red") {
     return "green";
   } else {
-    return "black";
+    return "white";
   }
 }
 
@@ -27,38 +28,38 @@ export default function Counter() {
       >
         Count: {x}
       </h1>
-      <button
+      <Button
         onClick={() => {
           x += 1;
           ReactDOM.render(<App />, document.querySelector("#root"));
         }}
-      >
-        + 1
-      </button>
-      <button
+        iconName="fa-plus"
+        tooltip="Add one."
+      />
+      <Button
         onClick={() => {
           x -= 1;
           ReactDOM.render(<App />, document.querySelector("#root"));
         }}
-      >
-        - 1
-      </button>
-      <button
+        iconName="fa-minus"
+        tooltip="Subtract one."
+      />
+      <Button
         onClick={() => {
           x = 0;
           ReactDOM.render(<App />, document.querySelector("#root"));
         }}
-      >
-        Reset
-      </button>
-      <button
+        iconName="fa-undo"
+        tooltip="Reset count."
+      />
+      <Button
         onClick={() => {
           theColor = updateColor(theColor);
           ReactDOM.render(<App />, document.querySelector("#root"));
         }}
-      >
-        Change Color
-      </button>
+        iconName="fa-palette"
+        tooltip="Change Color."
+      />
     </div>
   );
 }
