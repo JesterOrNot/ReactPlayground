@@ -34,13 +34,15 @@ img {
 
 .MediaCardText {
   align-content: center;
+  text-align: center;
   padding: 0 16px;
 }
 
-.MediaCard image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.MediaCard img {
+  display: block;
+  margin-left: auto;
+  border-radius: 50%;
+  margin-right: auto;
 }
 
 .cards {
